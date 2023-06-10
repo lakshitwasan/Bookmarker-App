@@ -1,0 +1,143 @@
+body {
+    overflow-x: hidden;
+}
+
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    /* outline: 2px solid green; */
+    display: flex;
+}
+
+#form-container {
+    height: 100%;
+    width: 60%;
+    /* border: 2px solid brown; */
+    background-color: #2C2424;
+    border: 4px solid white;
+}
+
+
+
+.siteName-label {
+    margin: 10vh 0 5vh 2vw;
+    color: white;
+    font-size: 3.5rem;
+}
+
+#siteName {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    margin-bottom: 10vh;
+    font-size: xx-large;
+    color: white;
+    width: 93%;
+    margin: auto;
+}
+
+#siteName:focus {
+    outline: none;
+    /* border: none; */
+}
+
+#siteName:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: xx-large;
+}
+
+#siteName:-webkit-autofill,
+#siteName:-webkit-autofill:hover,
+#siteName:-webkit-autofill:focus,
+#siteName:-webkit-autofill:active {
+    transition: 5000s ease-in-out;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.siteUrl-label {
+    margin: 10vh 0 5vh 2vw;
+    color: white;
+    font-size: 3.5rem;
+}
+
+
+#siteUrl {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    margin-bottom: 10vh;
+    font-size: xx-large;
+    color: white;
+    width: 93%;
+    margin: auto;
+}
+
+#siteUrl:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: xx-large;
+}
+
+#siteUrl:-webkit-autofill,
+#siteUrl:-webkit-autofill:hover,
+#siteUrl:-webkit-autofill:focus,
+#siteUrl:-webkit-autofill:active {
+    transition: 5000s ease-in-out;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#submit-btn {
+    margin: 10vh 40%;
+    background-color: transparent;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    /* margin: auto; */
+}
+
+
+#bookmark-container {
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: #5F5A5A;
+}
+
+#bookmark-container-heading {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin: 2vh 0;
+    /* margin-top: -25vh; */
+}
+
+#bookmark-container-heading h1 {
+    font-size: 3rem;
+}
+
+#bookmarksResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+#bookmarksResults::-webkit-scrollbar {
+    width: 0.6vw;
+    border-radius: 50px;
+}
+
+#bookmarksResults::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 50px;
+}

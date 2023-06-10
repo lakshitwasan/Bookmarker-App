@@ -72,18 +72,30 @@ function fetchBookmarks() {
 
 
         var div = document.createElement("div");
-        div.style.height = "10vh";
-        div.style.width = "67vw";
+        div.style.minHeight = "10vh";
+        div.style.width = "100%";
         div.style.margin = "auto";
         div.style.marginBottom = "2vh";
         div.style.display = "flex"
         div.style.alignItems = "center"
-        div.style.backgroundColor = "#F5F4F6"
+        // div.style.backgroundColor = "#5F5A5A"
+        // div.style.backgroundColor = "#F5F4F6"
+        div.style.backgroundColor = "#2C2424"
+        // div.style.backgroundColor = "tranparent"
         bookmarksResults.appendChild(div)
+
+        // <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+
+        var arrow = document.createElement("i")
+        arrow.setAttribute("class", "fa-solid fa-arrow-right");
+        arrow.style.color = "white"
+        arrow.style.marginLeft = "0.3vw"
+        arrow.style.fontSize = "x-large"
+        div.appendChild(arrow)
 
         var heading = document.createElement("h4")
         heading.innerHTML = name
-        heading.style.color = "black"
+        heading.style.color = "white"
         heading.style.fontWeight = "400"
         heading.style.marginLeft = "2vw";
         div.appendChild(heading)
@@ -103,7 +115,7 @@ function fetchBookmarks() {
         var deleteButton = document.createElement("a")
         deleteButton.innerHTML = "Delete"
         deleteButton.style.marginLeft = "1vw";
-        deleteButton.style.padding = "0.5vh";
+        deleteButton.style.padding = "0.3vh";
         deleteButton.style.borderRadius = "10%"
         deleteButton.style.border = "1px solid black"
         deleteButton.style.color = "white"
